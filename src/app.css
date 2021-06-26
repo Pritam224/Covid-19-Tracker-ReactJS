@@ -1,0 +1,101 @@
+html {
+  height: 100%; /* this default  */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.app_header {
+  display: flex;
+  align-items: center;
+  /* As i need he space between its children so i used space-Between */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.app_stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app_dropdown {
+  background-color: white;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.app_left {
+  flex: 0.9;
+}
+
+.app_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app_right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.graph {
+  flex-grow: 1;
+}
+.MuiCardContent-root h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app_headerIcon {
+  height: 4rem;
+  object-fit: contain;
+}
+
+.header__icon {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon > h1 {
+  font-size: 1.8rem;
+  color: #fc3c3c;
+  margin-left: 15px;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .header__icon > h1 {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+  .app_headerIcon {
+    height: 2.5rem;
+    object-fit: contain;
+  }
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
